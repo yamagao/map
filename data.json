@@ -1,0 +1,12 @@
+var data = {
+	"counties": [
+		{"name": Gulf, "address": "", "email": "metaylor@ufl.edu", "information": "", "longitude": 29.9000, "latitude": -85.2400}
+		,
+		{"name": Levy, "address": "", "email": "mgturner@ufl.edu", "information": "", "longitude": 29.2800, "latitude": -82.7900}
+		,
+		{"name": Pasco, "address": "", "email": "mecrisp@ufl.edu", "information": "", "longitude": 28.3000, "latitude": -82.4400}
+		,
+		{"name": Orange, "address": "", "email": "kshouldice@ufl.edu", "information": "", "longitude": 110.424957, "latitude": 24.781747}
+	]
+}
+
