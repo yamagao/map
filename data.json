@@ -1,11 +1,11 @@
 var data = {
 	"counties": [
-		{"name": "Alachua", "contact": "Annie Sheldon", "extension": "UF/IFAS Extension Alachua County UF East Campus", "address": "2046 N.E. Waldo Road, Suite 3221, Gainesville, FL 32609", "email": "aasheldon@ufl.edu", "longitude": 29.6706703, "latitude": -82.299}
+		{"name": "Alachua", "contact": "Annie Sheldon", "extension": "UF/IFAS Extension Alachua County UF East Campus", "address": "2046 N.E. Waldo Road, Suite 3221, Gainesville, FL 32609", "email": "aasheldon@ufl.edu", "latitude": 29.6706703, "longitude": -82.299}
 		,
-		{"name": "Bradford", "contact": "Samara Deary", "extension": "UF/IFAS Extension Bradford County", "address": "2266 N. Temple Ave., Starke, FL 32091", "phone": "(904) 966-6224", "email": "sdeary@ufl.edu", "longitude": 29.9671377, "latitude": -82.1031321}
+		{"name": "Bradford", "contact": "Samara Deary", "extension": "UF/IFAS Extension Bradford County", "address": "2266 N. Temple Ave., Starke, FL 32091", "phone": "(904) 966-6224", "email": "sdeary@ufl.edu", "latitude": 29.9671377, "longitude": -82.1031321}
 		,
-		{"name": "Brevard", "contact": "Beth Shephard", "extension": "UF/IFAS Extension Brevard County", "address": "3695 Lake Drive, Cocoa, FL 32926", "phone": "(321) 633-1702", "email": "bshephar@ufl.edu", "longitude": 28.3595442, "latitude": -80.7814422}
+		{"name": "Brevard", "contact": "Beth Shephard", "extension": "UF/IFAS Extension Brevard County", "address": "3695 Lake Drive, Cocoa, FL 32926", "phone": "(321) 633-1702", "email": "bshephar@ufl.edu", "latitude": 28.3595442, "longitude": -80.7814422}
 		,
-		{"name": "Broward", "contact": "Brenda Marty-Jimenez", "extension": "UF/IFAS Extension Broward County", "address": "3900 S.W. 100th Ave., Davie, FL 33328", "phone": "(954) 357-5270", "email": "bjimenez@ufl.edu", "longitude": 26.0718521, "latitude": -80.2801466}
+		{"name": "Broward", "contact": "Brenda Marty-Jimenez", "extension": "UF/IFAS Extension Broward County", "address": "3900 S.W. 100th Ave., Davie, FL 33328", "phone": "(954) 357-5270", "email": "bjimenez@ufl.edu", "latitude": 26.0718521, "longitude": -80.2801466}
 	]
 }
