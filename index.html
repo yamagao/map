@@ -22,13 +22,14 @@
 		function initialize() {
 			// Create the map.
 			var mapOptions = {
-				zoom: 8,
+				zoom: 7,
 				center: Center,
 				mapTypeId: google.maps.MapTypeId.TERRAIN
 			};
 			map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
 			//Construct County Polygon
+			Florida.setMap(map);
 			Alachua.setMap(map);
 			Bradford.setMap(map);
 			
