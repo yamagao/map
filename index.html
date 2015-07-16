@@ -30,12 +30,14 @@
 
 			//Construct County Polygon
 			Alachua.setMap(map);
+			Bradford.setMap(map);
+			
 			// Add a listener for the click event.
 			google.maps.event.addListener(Alachua, 'click', test);			
 			infoWindow = new google.maps.InfoWindow();
 			
 			// Construct the markers from JSON
-			for (var i = 0; i < 4; i++) {
+			for (var i = 0; i < 15; i++) {
 				var dataCounty = data.counties[i];
 				var latLng = new google.maps.LatLng(dataCounty.latitude, dataCounty.longitude);
 				var marker = new google.maps.Marker({
