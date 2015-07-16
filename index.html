@@ -15,8 +15,10 @@
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
 	<script src="data.json"></script>
 	<script src="areaPloyCoords.js"></script>
-    <script>	  
+    <script>
 		var Center = new google.maps.LatLng(28,-81);
+		var map;
+		var infoWindow;
 		function initialize() {
 			// Create the map.
 			var mapOptions = {
@@ -24,20 +26,43 @@
 				center: Center,
 				mapTypeId: google.maps.MapTypeId.TERRAIN
 			};
+			map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-			var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 			//Construct County Polygon
 			Alachua.setMap(map);
+			// Add a listener for the click event.
+			google.maps.event.addListener(Alachua, 'click', test);			
+			infoWindow = new google.maps.InfoWindow();
 			
 			// Construct the markers from JSON
 			for (var i = 0; i < 4; i++) {
 				var dataCounty = data.counties[i];
 				var latLng = new google.maps.LatLng(dataCounty.latitude, dataCounty.longitude);
 				var marker = new google.maps.Marker({
-				  position: latLng
+					position: latLng,
+					map: map,
+					title: 'Uluru (Ayers Rock)'
 				});
-				marker.setMap(map);
-			}
+				//marker.setMap(map);
+				/*
+				var infoWindow = new google.maps.InfoWindow({
+					content:"Hello World!",
+					position: latLng
+				});
+				google.maps.event.addListener(marker, 'click', function() {
+					infoWindow.open(map,marker);
+				});
+				*/
+			}		
+		}
+		
+		/** @this {google.maps.Polygon} */
+		function test(event) {
+		  // Replace the info window's content and position.
+		  infoWindow.setContent("Alachua");
+		  infoWindow.setPosition(event.latLng);
+
+		  infoWindow.open(map);
 		}
 
 		google.maps.event.addDomListener(window, 'load', initialize);
