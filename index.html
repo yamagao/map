@@ -13,16 +13,16 @@
 
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
-	<script src="data.json"></script>
+	<script src="data.js"></script>
 	<script src="areaPloyCoords.js"></script>
     <script>
-		var Center = new google.maps.LatLng(28,-81);
+		var Center = new google.maps.LatLng(27.9,-83);
 		var map;
 		var infoWindow;
 		function initialize() {
 			// Create the map.
 			var mapOptions = {
-				zoom: 7,
+				zoom: 8,
 				center: Center,
 				mapTypeId: google.maps.MapTypeId.TERRAIN
 			};
@@ -38,13 +38,12 @@
 			infoWindow = new google.maps.InfoWindow();
 			
 			// Construct the markers from JSON
-			for (var i = 0; i < 15; i++) {
+			for (var i = 0; i < 37; i++) {
 				var dataCounty = data.counties[i];
 				var latLng = new google.maps.LatLng(dataCounty.latitude, dataCounty.longitude);
 				var marker = new google.maps.Marker({
 					position: latLng,
-					map: map,
-					title: 'Uluru (Ayers Rock)'
+					//title: 'Uluru (Ayers Rock)'
 				});
 				//marker.setMap(map);
 				/*
@@ -61,11 +60,27 @@
 		
 		/** @this {google.maps.Polygon} */
 		function test(event) {
+			var dataCounty = data.counties[0];
+			var latLng = new google.maps.LatLng(dataCounty.latitude, dataCounty.longitude);
+			var marker = new google.maps.Marker({
+				position: latLng,
+				//title: 'Uluru (Ayers Rock)'
+			});
+			marker.setMap(map);
+			var String = "<h3>" + dataCounty.name + "</h3>FNP Contact: " + dataCounty.contact + "<br>" + dataCounty.extension + "<br>" + dataCounty.address + "<br><a href='mailto:" + dataCounty.email + "'>" + dataCounty.email + "</a><br>" + dataCounty.phone;
+			var infoWindow = new google.maps.InfoWindow({
+				content:  String,
+				position: latLng
+			});
+			infoWindow.open(map,marker);
+
 		  // Replace the info window's content and position.
+		  /*
 		  infoWindow.setContent("Alachua");
 		  infoWindow.setPosition(event.latLng);
 
 		  infoWindow.open(map);
+		  */
 		}
 
 		google.maps.event.addDomListener(window, 'load', initialize);
