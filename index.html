@@ -14,32 +14,8 @@
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
 	<script src="data.json"></script>
-    <script>
-		// Define the LatLng coordinates for the polygon's path.
-		var AlachuaCoords = [
-			new google.maps.LatLng(29.821583,-82.647400),
-			new google.maps.LatLng(29.933515,-82.534790),
-			new google.maps.LatLng(29.835879,-82.114563),
-			new google.maps.LatLng(29.709525,-82.051392),
-			new google.maps.LatLng(29.444381,-82.062378),
-			new google.maps.LatLng(29.499378,-82.196960),
-			new google.maps.LatLng(29.504159,-82.551270),
-			new google.maps.LatLng(29.547177,-82.556763),
-			new google.maps.LatLng(29.547177,-82.655640),
-			new google.maps.LatLng(29.821583,-82.647400)
-		];
-
-		// Construct the polygon.
-		var Alachua = new google.maps.Polygon({
-			paths: AlachuaCoords,
-			strokeColor: '#FF0000',
-			strokeOpacity: 0.8,
-			strokeWeight: 2,
-			fillColor: '#FF0000',
-			fillOpacity: 0.35
-		});
-
-	  
+	<script src="areaPloyCoords.js"></script>
+    <script>	  
 		var Center = new google.maps.LatLng(28,-81);
 		function initialize() {
 			// Create the map.
