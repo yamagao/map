@@ -19,7 +19,7 @@
 		var Center = new google.maps.LatLng(27.9,-83);
 		var map;
 		var infoWindow;
-		var markers = [];
+		var markers = {};
 		function initialize() {
 			// Create the map.
 			var mapOptions = {
@@ -45,8 +45,8 @@
 				});
 				cur.setMap(map);
 				google.maps.event.addListener(cur, 'click', function(){
-					for (var i = 0; i < markers.length; i++) {
-						markers[i].setMap(null);
+					for (var name in markers) {
+						markers[name].setMap(null);
 					}
 					var dataCounty = data.counties[this.index];
 					var latLng = new google.maps.LatLng(dataCounty.latitude, dataCounty.longitude);
@@ -54,13 +54,13 @@
 					//	position: latLng,
 						//title: 'Uluru (Ayers Rock)'
 					//});
-					markers[this.index].setMap(map);
+					markers[dataCounty.name].setMap(map);
 					var String = "<h3>" + dataCounty.name + "</h3>FNP Contact: " + dataCounty.contact + "<br>" + dataCounty.extension + "<br>" + dataCounty.address + "<br><a href='mailto:" + dataCounty.email + "'>" + dataCounty.email + "</a><br>" + dataCounty.phone;
 					var infoWindow = new google.maps.InfoWindow({
 						content:  String,
 						position: latLng
 					});
-					infoWindow.open(map, markers[this.index]);
+					infoWindow.open(map, markers[dataCounty.name]);
 				});
 			}
 			//Alachua.setMap(map);
@@ -78,7 +78,7 @@
 					position: latLng,
 					//title: 'Uluru (Ayers Rock)'
 				});
-				markers.push(marker);
+				markers[dataCounty.name] = marker;
 				//marker.setMap(map);
 				/*
 				var infoWindow = new google.maps.InfoWindow({
