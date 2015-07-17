@@ -115,31 +115,38 @@ var countyCoords = {
 			new google.maps.LatLng(30.147502,-82.048645),
 			new google.maps.LatLng(30.145127,-82.139282)
 		]}
+		,
+		{"name": "Union", "coords": [
+			new google.maps.LatLng(30.145127,-82.146149),
+			new google.maps.LatLng(30.139189,-82.453766),
+			new google.maps.LatLng(30.002517,-82.573242),
+			new google.maps.LatLng(29.938275,-82.533417),
+			new google.maps.LatLng(29.918043,-82.446899),
+			new google.maps.LatLng(30.142752,-82.151642)
+		]}
+		,
+		{"name": "Columbia", "coords": [
+			new google.maps.LatLng(30.146315,-82.453766),
+			new google.maps.LatLng(30.584726,-82.462006),
+			new google.maps.LatLng(30.597730,-82.698212),
+			new google.maps.LatLng(30.532694,-82.731171),
+			new google.maps.LatLng(30.443938,-82.665253),
+			new google.maps.LatLng(30.369321,-82.688599),
+			new google.maps.LatLng(30.336139,-82.805328),
+			new google.maps.LatLng(29.982297,-82.801208),
+			new google.maps.LatLng(29.823966,-82.657013),
+			new google.maps.LatLng(29.938275,-82.538910),
+			new google.maps.LatLng(30.004895,-82.580109),
+			new google.maps.LatLng(30.143940,-82.457886)
+		]}
+		,
+		{"name": "Gilchrist", "coords": [
+			new google.maps.LatLng(29.939465,-82.797089),
+			new google.maps.LatLng(29.819200,-82.662506),
+			new google.maps.LatLng(29.549567,-82.665253),
+			new google.maps.LatLng(29.588983,-82.949524),
+			new google.maps.LatLng(29.821583,-82.930298),
+			new google.maps.LatLng(29.937085,-82.803955)
+		]}
 	]
 }
-
-// Construct the polygon.
-var Florida = new google.maps.Polygon({
-	paths: FloridaCoords,
-	strokeColor: '#D4886A',
-	strokeOpacity: 0.8,
-	strokeWeight: 4,
-	fillColor: '#FFC2AA',
-	fillOpacity: 0.1
-});
-var Alachua = new google.maps.Polygon({
-	paths: countyCoords.counties[0].coords,
-	strokeColor: '#D4886A',
-	strokeOpacity: 0.8,
-	strokeWeight: 2,
-	fillColor: '#FFC2AA',
-	fillOpacity: 0.2
-});
-var Bradford = new google.maps.Polygon({
-	paths: countyCoords.counties[1].coords,
-	strokeColor: '#D4886A',
-	strokeOpacity: 0.8,
-	strokeWeight: 2,
-	fillColor: '#FFC2AA',
-	fillOpacity: 0.2
-});
