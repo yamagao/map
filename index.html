@@ -67,7 +67,7 @@
 			infoWindow = new google.maps.InfoWindow();
 			
 			// Construct the markers from JSON
-			for (var i = 0; i < 37; i++) {
+			for (var i = 0; i < data.counties.length; i++) {
 				var dataCounty = data.counties[i];
 				var latLng = new google.maps.LatLng(dataCounty.latitude, dataCounty.longitude);
 				var marker = new google.maps.Marker({
