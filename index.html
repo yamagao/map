@@ -31,6 +31,14 @@
 			map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
 			//Construct Florida Polygon
+			var Florida = new google.maps.Polygon({
+				paths: FloridaCoords,
+				strokeColor: '#D4886A',
+				strokeOpacity: 0.8,
+				strokeWeight: 4,
+				fillColor: '#FFC2AA',
+				fillOpacity: 0.1
+			});
 			Florida.setMap(map);
 			
 			//Construct County Polygons and Animation
