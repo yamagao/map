@@ -33,8 +33,8 @@
 			Florida.setMap(map);
 			
 			//Construct County Polygon
-			for (var i = 0; i < 2; i++) {
-				var cur = new google.maps.Polygon({
+			for (var i = 0; i < countyCoords.counties.length; i++) {
+				var polygon = new google.maps.Polygon({
 					paths: countyCoords.counties[i].coords,
 					strokeColor: '#D4886A',
 					strokeOpacity: 0.8,
@@ -43,17 +43,13 @@
 					fillOpacity: 0.2,
 					index: i
 				});
-				cur.setMap(map);
-				google.maps.event.addListener(cur, 'click', function(){
+				polygon.setMap(map);
+				google.maps.event.addListener(polygon, 'click', function(){
 					for (var name in markers) {
 						markers[name].setMap(null);
 					}
 					var dataCounty = data.counties[this.index];
 					var latLng = new google.maps.LatLng(dataCounty.latitude, dataCounty.longitude);
-					//var marker = new google.maps.Marker({
-					//	position: latLng,
-						//title: 'Uluru (Ayers Rock)'
-					//});
 					markers[dataCounty.name].setMap(map);
 					var String = "<h3>" + dataCounty.name + "</h3>FNP Contact: " + dataCounty.contact + "<br>" + dataCounty.extension + "<br>" + dataCounty.address + "<br><a href='mailto:" + dataCounty.email + "'>" + dataCounty.email + "</a><br>" + dataCounty.phone;
 					var infoWindow = new google.maps.InfoWindow({
@@ -76,19 +72,10 @@
 				var latLng = new google.maps.LatLng(dataCounty.latitude, dataCounty.longitude);
 				var marker = new google.maps.Marker({
 					position: latLng,
-					//title: 'Uluru (Ayers Rock)'
+					//title: 'Alachua'
 				});
 				markers[dataCounty.name] = marker;
 				//marker.setMap(map);
-				/*
-				var infoWindow = new google.maps.InfoWindow({
-					content:"Hello World!",
-					position: latLng
-				});
-				google.maps.event.addListener(marker, 'click', function() {
-					infoWindow.open(map,marker);
-				});
-				*/
 			}		
 		}
 		
