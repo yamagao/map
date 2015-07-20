@@ -129,6 +129,14 @@ function initialize() {
 			position: new google.maps.LatLng(dataCounty.latitude, dataCounty.longitude)
 		});
 		infoWindows[dataCounty.name] = infoWindow;
+				
+		//hide markers when infoWindow is closed
+		google.maps.event.addListener(infoWindow,'closeclick', function(){
+			//hide all markers
+			for (var name in markers) {
+				markers[name].setMap(null);
+			}
+		});
 	}		
 }
 
