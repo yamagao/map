@@ -85,6 +85,9 @@
 				google.maps.event.addListener(polygon, 'mousemove', function(event){
 					tags[this.county].setPosition(event.latLng);
 					tags[this.county].setVisible(true);
+					if(map.zoom > 10){
+						tags[this.county].setVisible(false);
+					}
 				});
 				
 				//hide label when unhover
