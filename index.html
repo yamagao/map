@@ -33,6 +33,7 @@
 		var infoWindow;
 		var markers = {};
 		var tags = {};
+		var infoWindows = {};
 		function initialize() {
 			// Create the map
 			var mapOptions = {
@@ -85,7 +86,7 @@
 				google.maps.event.addListener(polygon, 'mousemove', function(event){
 					tags[this.county].setPosition(event.latLng);
 					tags[this.county].setVisible(true);
-					if(map.zoom > 10){
+					if(map.zoom > 10 || isInfoWindowOpen(infoWindows)){
 						tags[this.county].setVisible(false);
 					}
 				});
@@ -116,6 +117,7 @@
 						content:  String,
 						position: new google.maps.LatLng(dataCounty.latitude, dataCounty.longitude)
 					});
+					infoWindows[dataCounty.name] = infoWindow;
 					infoWindow.open(map, markers[dataCounty.name]);
 				});
 			}
@@ -133,6 +135,17 @@
 			}		
 		}
 		
+		//check if these is any infoWindow open
+		function isInfoWindowOpen(infoWindows){
+			var getmap;
+			for (var name in infoWindows) {
+				getmap = infoWindows[name].getMap();
+				if(getmap !== null && typeof getmap !== "undefined"){
+					return true;
+				}
+			}
+			return false;
+		}
 		google.maps.event.addDomListener(window, 'load', initialize);
     </script>
   </head>
