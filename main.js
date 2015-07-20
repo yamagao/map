@@ -58,7 +58,7 @@ function initialize() {
 		
 		//hover on the polygon to show county name
 		google.maps.event.addListener(polygon, 'mousemove', function(event){
-			tags[this.county].setPosition(event.latLng);
+			tags[this.county].setPosition(markers[this.county].position);
 			tags[this.county].setVisible(true);
 			if(map.zoom > 10 || isInfoWindowOpen(infoWindows)){
 				tags[this.county].setVisible(false);
@@ -68,6 +68,26 @@ function initialize() {
 		//hide label when unhover
 		google.maps.event.addListener(polygon, "mouseout", function(event) {
 			tags[this.county].setVisible(false);
+		});
+		
+		//click tag to show marker and infoWindow
+		google.maps.event.addListener(tag, 'click', function(){
+			//hide all markers
+			for (var name in markers) {
+				markers[name].setMap(null);
+			}
+			
+			//find county data
+			for(var i = 0; i < data.counties.length; i++){
+				if(data.counties[i].name == this.county){
+					var dataCounty = data.counties[i];
+					break;
+				}
+			}
+			
+			//set marker and infoWindow
+			markers[dataCounty.name].setMap(map);
+			infoWindows[dataCounty.name].open(map, markers[dataCounty.name]);
 		});
 		
 		//click polygon to show marker and infoWindow
