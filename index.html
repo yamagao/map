@@ -5,14 +5,25 @@
     <meta charset="utf-8">
     <title>FNP</title>
     <style>
-      html, body, #map-canvas {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-
+		html, body, #map-canvas {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		.labels {
+			 color: red;
+			 background-color: white;
+			 font-family: "Lucida Grande", "Arial", sans-serif;
+			 font-size: 10px;
+			 font-weight: bold;
+			 text-align: center;
+			 width: 65px;     
+			 border: 2px solid black;
+			 white-space: nowrap;
+		}
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+	<script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/tags/markerwithlabel/1.1.5/src/markerwithlabel_packed.js"></script>
 	<script src="data.js"></script>
 	<script src="areaPloyCoords.js"></script>
     <script>
@@ -21,6 +32,7 @@
 		var map;
 		var infoWindow;
 		var markers = {};
+		var tags = {};
 		function initialize() {
 			// Create the map
 			var mapOptions = {
@@ -53,6 +65,32 @@
 					fillOpacity: 0.2,
 				});
 				polygon.setMap(map);
+				
+				//Label with county name
+				var tag = new MarkerWithLabel({
+					position: new google.maps.LatLng(0,0),
+					draggable: false,
+					raiseOnDrag: false,
+					map: map,
+					labelContent: countyCoords.counties[i].name,
+					labelAnchor: new google.maps.Point(30, 20),
+					labelClass: "labels", // the CSS class for the label
+					labelStyle: {opacity: 1.0},
+					icon: "http://placehold.it/1x1",
+					visible: false
+				 });
+				 tags[countyCoords.counties[i].name] = tag;
+				
+				//hover on the polygon to show county name
+				google.maps.event.addListener(polygon, 'mousemove', function(event){
+					tags[this.county].setPosition(event.latLng);
+					tags[this.county].setVisible(true);
+				});
+				
+				//hide label when unhover
+				google.maps.event.addListener(polygon, "mouseout", function(event) {
+					tags[this.county].setVisible(false);
+				});
 				
 				//click polygon to show marker and infoWindow
 				google.maps.event.addListener(polygon, 'click', function(){
