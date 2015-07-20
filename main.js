@@ -58,7 +58,11 @@ function initialize() {
 		
 		//hover on the polygon to show county name
 		google.maps.event.addListener(polygon, 'mousemove', function(event){
-			tags[this.county].setPosition(markers[this.county].position);
+			//get polygon center and show tag there
+			var bounds = new google.maps.LatLngBounds();
+			this.getPath().forEach(function(element,index){bounds.extend(element)});
+			tags[this.county].setPosition(bounds.getCenter());
+			//tags[this.county].setPosition(markers[this.county].position);
 			tags[this.county].setVisible(true);
 			if(map.zoom > 10 || isInfoWindowOpen(infoWindows)){
 				tags[this.county].setVisible(false);
