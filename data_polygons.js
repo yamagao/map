@@ -97,56 +97,75 @@ var countyCoords = {
 		{"name": "Alachua", "coords": [
 			new google.maps.LatLng(29.821583,-82.647400),
 			new google.maps.LatLng(29.933515,-82.534790),
-			new google.maps.LatLng(29.835879,-82.114563),
+			new google.maps.LatLng(29.838261,-82.114563),
 			new google.maps.LatLng(29.709525,-82.051392),
 			new google.maps.LatLng(29.444381,-82.062378),
-			new google.maps.LatLng(29.499378,-82.196960),
-			new google.maps.LatLng(29.504159,-82.551270),
+			new google.maps.LatLng(29.504000,-82.196960),
+			new google.maps.LatLng(29.504000,-82.551270),
 			new google.maps.LatLng(29.547177,-82.556763),
 			new google.maps.LatLng(29.547177,-82.655640)
 		]}
 		,
 		{"name": "Bradford", "coords": [
-			new google.maps.LatLng(30.143940,-82.142029),
-			new google.maps.LatLng(29.931135,-82.415314),
-			new google.maps.LatLng(29.907329,-82.408447),
+			new google.maps.LatLng(30.145127,-82.139282),
+			new google.maps.LatLng(29.910000,-82.431013),
 			new google.maps.LatLng(29.838261,-82.114563),
-			new google.maps.LatLng(29.714296,-82.048645),
-			new google.maps.LatLng(30.147502,-82.048645),
-			new google.maps.LatLng(30.145127,-82.139282)
+			new google.maps.LatLng(29.709525,-82.051392),
+			new google.maps.LatLng(30.147502,-82.048645)
 		]}
 		,
 		{"name": "Union", "coords": [
-			new google.maps.LatLng(30.145127,-82.146149),
+			new google.maps.LatLng(30.145127,-82.139282),
 			new google.maps.LatLng(30.139189,-82.453766),
 			new google.maps.LatLng(30.002517,-82.573242),
-			new google.maps.LatLng(29.938275,-82.533417),
-			new google.maps.LatLng(29.918043,-82.446899),
-			new google.maps.LatLng(30.142752,-82.151642)
+			new google.maps.LatLng(29.933515,-82.534790),
+			new google.maps.LatLng(29.910000,-82.431013)
 		]}
 		,
 		{"name": "Columbia", "coords": [
 			new google.maps.LatLng(30.146315,-82.453766),
-			new google.maps.LatLng(30.584726,-82.462006),
-			new google.maps.LatLng(30.597730,-82.698212),
+			new google.maps.LatLng(30.583500,-82.462006),
+			new google.maps.LatLng(30.597680,-82.698212),
 			new google.maps.LatLng(30.532694,-82.731171),
 			new google.maps.LatLng(30.443938,-82.665253),
 			new google.maps.LatLng(30.369321,-82.688599),
 			new google.maps.LatLng(30.336139,-82.805328),
-			new google.maps.LatLng(29.982297,-82.801208),
-			new google.maps.LatLng(29.823966,-82.657013),
-			new google.maps.LatLng(29.938275,-82.538910),
-			new google.maps.LatLng(30.004895,-82.580109),
-			new google.maps.LatLng(30.143940,-82.457886)
+			new google.maps.LatLng(29.939465,-82.797089),
+			new google.maps.LatLng(29.821583,-82.647400),
+			new google.maps.LatLng(29.933515,-82.534790),
+			new google.maps.LatLng(30.002517,-82.573242),
+			new google.maps.LatLng(30.139189,-82.453766)
 		]}
 		,
 		{"name": "Gilchrist", "coords": [
 			new google.maps.LatLng(29.939465,-82.797089),
-			new google.maps.LatLng(29.819200,-82.662506),
-			new google.maps.LatLng(29.549567,-82.665253),
+			new google.maps.LatLng(29.821583,-82.647400),
+			new google.maps.LatLng(29.547177,-82.655640),
 			new google.maps.LatLng(29.588983,-82.949524),
-			new google.maps.LatLng(29.821583,-82.930298),
+			new google.maps.LatLng(29.823370,-82.909012),
 			new google.maps.LatLng(29.937085,-82.803955)
+		]}
+		,
+		{"name": "Levy", "coords": [
+			new google.maps.LatLng(29.588983,-82.949524),
+			new google.maps.LatLng(29.300771,-83.166504),
+			new google.maps.LatLng(28.986520,-82.757263),
+			new google.maps.LatLng(29.057370,-82.533417),
+			new google.maps.LatLng(29.213908,-82.537537),
+			new google.maps.LatLng(29.215107,-82.402954),
+			new google.maps.LatLng(29.504000,-82.404327),
+			new google.maps.LatLng(29.504000,-82.551270),
+			new google.maps.LatLng(29.547177,-82.556763),
+			new google.maps.LatLng(29.547177,-82.655640)
+		]}
+		,
+		{"name": "Dixie", "coords": [
+			new google.maps.LatLng(29.588983,-82.949524),
+			new google.maps.LatLng(29.300771,-83.166504),
+			new google.maps.LatLng(29.513720,-83.394470),
+			new google.maps.LatLng(29.657029,-83.424683),
+			new google.maps.LatLng(29.822583,-83.318939),
+			new google.maps.LatLng(29.823370,-82.909012)
 		]}
 	]
 }
