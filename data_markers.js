@@ -1,3 +1,7 @@
+/** Extension Info and Coords
+*** Author: Yiqi Gao
+*** Last Modified: July 20, 2015
+**/
 var data = {
 	"counties": [
 		{"name": "Alachua", "contact": "Annie Sheldon", "extension": "UF/IFAS Extension Alachua County, UF East Campus", "address": "2046 N.E. Waldo Road, Suite 3221, Gainesville, FL 32609", "phone": "", "email": "aasheldon@ufl.edu", "latitude": 29.6706703, "longitude": -82.299}

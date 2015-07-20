@@ -1,6 +1,6 @@
 /** County Area Coords, recommend tool for getting coords: http://www.birdtheme.org/useful/v3tool.html 
 *** Author: Yiqi Gao
-*** Date: July 16, 2015
+*** Last Modified: July 20, 2015
 **/
 // Define the LatLng coordinates for the polygon's path.
 var FloridaCoords = [
