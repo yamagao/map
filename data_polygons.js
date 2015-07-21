@@ -142,8 +142,7 @@ var countyCoords = {
 			new google.maps.LatLng(29.821583,-82.647400),
 			new google.maps.LatLng(29.547177,-82.655640),
 			new google.maps.LatLng(29.588983,-82.949524),
-			new google.maps.LatLng(29.823370,-82.909012),
-			new google.maps.LatLng(29.937085,-82.803955)
+			new google.maps.LatLng(29.823370,-82.909012)
 		]}
 		,
 		{"name": "Levy", "coords": [
@@ -166,6 +165,312 @@ var countyCoords = {
 			new google.maps.LatLng(29.657029,-83.424683),
 			new google.maps.LatLng(29.822583,-83.318939),
 			new google.maps.LatLng(29.823370,-82.909012)
+		]}
+		,
+		{"name": "Suwannee", "coords": [
+			new google.maps.LatLng(30.336139,-82.805328),
+			new google.maps.LatLng(29.939465,-82.797089),
+			new google.maps.LatLng(29.823370,-82.909012),
+			new google.maps.LatLng(30.109494,-83.215942),
+			new google.maps.LatLng(30.262626,-83.250275),
+			new google.maps.LatLng(30.423809,-83.151398),
+			new google.maps.LatLng(30.451041,-83.069000)
+		]}
+		,
+		{"name": "Lafayette", "coords": [
+			new google.maps.LatLng(30.262626,-83.367691),
+			new google.maps.LatLng(30.262626,-83.250275),
+			new google.maps.LatLng(30.109494,-83.215942),
+			new google.maps.LatLng(29.823370,-82.909012),
+			new google.maps.LatLng(29.822490,-83.367691)
+		]}
+		,
+		{"name": "Madison", "coords": [
+			new google.maps.LatLng(30.631244,-83.269501),
+			new google.maps.LatLng(30.387092,-83.173942),
+			new google.maps.LatLng(30.262626,-83.250275),
+			new google.maps.LatLng(30.262626,-83.472748),
+			new google.maps.LatLng(30.302946,-83.472748),
+			new google.maps.LatLng(30.302946,-83.814697),
+			new google.maps.LatLng(30.651207,-83.612823)
+		]}
+		,
+		{"name": "Taylor", "coords": [
+			new google.maps.LatLng(30.244239,-83.923874),
+			new google.maps.LatLng(30.088702,-83.998718),
+			new google.maps.LatLng(29.657029,-83.424683),
+			new google.maps.LatLng(29.822583,-83.318939),
+			new google.maps.LatLng(29.822490,-83.367691),
+			new google.maps.LatLng(30.262626,-83.367691),
+			new google.maps.LatLng(30.262626,-83.472748),
+			new google.maps.LatLng(30.302946,-83.472748),
+			new google.maps.LatLng(30.302946,-83.814697)
+		]}
+		,
+		{"name": "Santa Rosa", "coords": [
+			new google.maps.LatLng(30.997800,-87.166901),
+			new google.maps.LatLng(30.851542,-87.313843),
+			new google.maps.LatLng(30.345621,-87.195740),
+			new google.maps.LatLng(30.387229,-86.796886),
+			new google.maps.LatLng(30.996923,-86.786499)
+		]}
+		,
+		{"name": "Okaloosa", "coords": [
+			new google.maps.LatLng(30.387229,-86.796886),
+			new google.maps.LatLng(30.996923,-86.786499),
+			new google.maps.LatLng(30.994680,-86.390991),
+			new google.maps.LatLng(30.378799,-86.396484)
+		]}
+		,
+		{"name": "Walton", "coords": [
+			new google.maps.LatLng(30.994680,-86.390991),
+			new google.maps.LatLng(30.378799,-86.396484),
+			new google.maps.LatLng(30.269149,-85.996170),
+			new google.maps.LatLng(30.416111,-85.992737),
+			new google.maps.LatLng(30.496018,-85.857468),
+			new google.maps.LatLng(30.621368,-85.915833),
+			new google.maps.LatLng(30.698154,-85.853348),
+			new google.maps.LatLng(30.705239,-86.036682),
+			new google.maps.LatLng(30.994092,-86.038055)
+		]}
+		,
+		{"name": "Calhoun", "coords": [
+			new google.maps.LatLng(30.566789, -85.384318),
+			new google.maps.LatLng(30.564597, -85.173896),
+			new google.maps.LatLng(30.607965, -85.167712),
+			new google.maps.LatLng(30.606400, -84.933283),
+			new google.maps.LatLng(30.200628, -85.115253),
+			new google.maps.LatLng(30.200628, -85.115253),
+			new google.maps.LatLng(30.201685, -85.389920)
+		]}
+		,
+		{"name": "Gulf", "coords": [			
+			new google.maps.LatLng(30.200628, -85.115253),
+			new google.maps.LatLng(30.201685, -85.389920),
+			new google.maps.LatLng(29.924028, -85.389573),
+			new google.maps.LatLng(29.832145, -85.420951),
+			new google.maps.LatLng(29.656620, -85.349449),
+			new google.maps.LatLng(29.676287, -85.235766),
+			new google.maps.LatLng(29.807599, -85.021260),
+			new google.maps.LatLng(29.901734, -85.053668),
+			new google.maps.LatLng(29.951665, -85.018688),
+			new google.maps.LatLng(29.991770, -85.037721),
+			new google.maps.LatLng(30.052343, -85.136487)
+		]}
+		,
+		{"name": "Liberty", "coords": [			
+			new google.maps.LatLng(30.606400, -84.933283),
+			new google.maps.LatLng(30.200628, -85.115253),
+			new google.maps.LatLng(30.052343, -85.136487),
+			new google.maps.LatLng(29.991770, -85.037721),
+			new google.maps.LatLng(29.951665, -85.018688),
+			new google.maps.LatLng(30.013658, -85.005977),
+			new google.maps.LatLng(30.011502, -84.547400),
+			new google.maps.LatLng(30.266186, -84.734321),
+			new google.maps.LatLng(30.387845, -84.652017),
+			new google.maps.LatLng(30.604148, -84.885556)
+		]}
+		,
+		{"name": "Franklin", "coords": [			
+			new google.maps.LatLng(30.011502, -84.547400),
+			new google.maps.LatLng(30.013658, -85.005977),
+			new google.maps.LatLng(29.951665, -85.018688),
+			new google.maps.LatLng(29.901734, -85.053668),
+			new google.maps.LatLng(29.807599, -85.021260),
+			new google.maps.LatLng(29.676287, -85.235766),
+			new google.maps.LatLng(29.586165, -85.051187),
+			new google.maps.LatLng(29.904502, -84.339716),
+			new google.maps.LatLng(29.943593, -84.333896),
+			new google.maps.LatLng(30.010389, -84.546319)
+		]}
+		,
+		{"name": "Wakulla", "coords": [			
+			new google.maps.LatLng(30.266186, -84.734321),
+			new google.maps.LatLng(30.011502, -84.547400),
+			new google.maps.LatLng(29.974932, -84.429659),
+			new google.maps.LatLng(29.969822, -84.338312),
+			new google.maps.LatLng(30.092430, -84.077042),
+			new google.maps.LatLng(30.273609, -84.075422),
+			new google.maps.LatLng(30.274107, -84.241135),
+			new google.maps.LatLng(30.303523, -84.247775),
+			new google.maps.LatLng(30.299934, -84.710826)
+		]}
+		,
+		{"name": "Leon", "coords": [			
+			new google.maps.LatLng(30.273609, -84.075422),
+			new google.maps.LatLng(30.274107, -84.241135),
+			new google.maps.LatLng(30.303523, -84.247775),
+			new google.maps.LatLng(30.299934, -84.710826),
+			new google.maps.LatLng(30.387845, -84.652017),
+			new google.maps.LatLng(30.500983, -84.403939),
+			new google.maps.LatLng(30.683986, -84.292702),
+			new google.maps.LatLng(30.670276, -84.007380),
+			new google.maps.LatLng(30.522038, -83.977347),
+			new google.maps.LatLng(30.522038, -84.041001),
+			new google.maps.LatLng(30.463740, -84.041729),
+			new google.maps.LatLng(30.434264, -84.074465)
+		]}
+		,
+		{"name": "Nassau", "coords": [
+			new google.maps.LatLng(30.514272, -81.434499),
+			new google.maps.LatLng(30.568740, -81.721717),
+			new google.maps.LatLng(30.275515, -82.048929),
+			new google.maps.LatLng(30.3598, -82.0638),
+			new google.maps.LatLng(30.4877, -82.0226),
+			new google.maps.LatLng(30.6308, -82.0473),
+			new google.maps.LatLng(30.6757, -82.0514),
+			new google.maps.LatLng(30.7111, -82.0377),
+			new google.maps.LatLng(30.7371, -82.0514),
+			new google.maps.LatLng(30.7678, -82.0102),
+			new google.maps.LatLng(30.7914, -82.0322),
+			new google.maps.LatLng(30.7997, -81.9717),
+			new google.maps.LatLng(30.8244, -81.9608),
+			new google.maps.LatLng(30.8056, -81.8893),
+			new google.maps.LatLng(30.7914, -81.8372),
+			new google.maps.LatLng(30.7796, -81.7960),
+			new google.maps.LatLng(30.7536, -81.6696),
+			new google.maps.LatLng(30.7289, -81.6051),
+			new google.maps.LatLng(30.7324, -81.5666),
+			new google.maps.LatLng(30.7229, -81.5295),
+			new google.maps.LatLng(30.7253, -81.4856),
+			new google.maps.LatLng(30.7111, -81.4609),
+			new google.maps.LatLng(30.7088, -81.4249)
+		]}
+		,
+		{"name": "Duval", "coords": [
+			new google.maps.LatLng(30.514272, -81.434499),
+			new google.maps.LatLng(30.568740, -81.721717),
+			new google.maps.LatLng(30.275515, -82.048929),
+			new google.maps.LatLng(30.187535, -82.049838),
+			new google.maps.LatLng(30.189311, -81.693972),
+			new google.maps.LatLng(30.129082, -81.660059),
+			new google.maps.LatLng(30.134395, -81.622654),
+			new google.maps.LatLng(30.118858, -81.567757),
+			new google.maps.LatLng(30.120241, -81.539202),
+			new google.maps.LatLng(30.103673, -81.538813),
+			new google.maps.LatLng(30.105334, -81.434007),
+			new google.maps.LatLng(30.252086, -81.436794),
+			new google.maps.LatLng(30.252963, -81.379881)
+		]}
+		,
+		{"name": "St. Johns", "coords": [
+			new google.maps.LatLng(30.252963, -81.379881),
+			new google.maps.LatLng(30.252086, -81.436794),
+			new google.maps.LatLng(30.105334, -81.434007),
+			new google.maps.LatLng(30.103673, -81.538813),
+			new google.maps.LatLng(30.120241, -81.539202),
+			new google.maps.LatLng(30.118858, -81.567757),
+			new google.maps.LatLng(30.134395, -81.622654),
+			new google.maps.LatLng(30.116262, -81.646159),
+			new google.maps.LatLng(30.044314, -81.684267),
+			new google.maps.LatLng(29.983850, -81.617623),
+			new google.maps.LatLng(29.759317, -81.525606),
+			new google.maps.LatLng(29.622720, -81.524232),
+			new google.maps.LatLng(29.626301, -81.325105),
+			new google.maps.LatLng(29.670965, -81.213018)			
+		]}
+		,
+		{"name": "Flagler", "coords": [
+			new google.maps.LatLng(29.670965, -81.213018),
+			new google.maps.LatLng(29.626301, -81.325105),
+			new google.maps.LatLng(29.622720, -81.524232),
+			new google.maps.LatLng(29.518796, -81.521612),
+			new google.maps.LatLng(29.396597, -81.473389),
+			new google.maps.LatLng(29.391934, -81.450034),
+			new google.maps.LatLng(29.398617, -81.435480),
+			new google.maps.LatLng(29.400473, -81.421190),
+			new google.maps.LatLng(29.261393, -81.417416),
+			new google.maps.LatLng(29.266155, -81.149968),
+			new google.maps.LatLng(29.411010, -81.155461),
+			new google.maps.LatLng(29.427159, -81.102246)
+		]}
+		,
+		{"name": "Putnam", "coords": [
+			new google.maps.LatLng(29.840020, -81.605451),
+			new google.maps.LatLng(29.759317, -81.525606),
+			new google.maps.LatLng(29.518796, -81.521612),
+			new google.maps.LatLng(29.396597, -81.473389),
+			new google.maps.LatLng(29.391934, -81.450034),
+			new google.maps.LatLng(29.378920, -81.452357),
+			new google.maps.LatLng(29.330111, -81.652036),
+			new google.maps.LatLng(29.371350, -81.668562),
+			new google.maps.LatLng(29.371350, -81.742123),
+			new google.maps.LatLng(29.429790, -81.742123),
+			new google.maps.LatLng(29.431483, -81.774852),
+			new google.maps.LatLng(29.487068, -81.776796),
+			new google.maps.LatLng(29.486280, -81.843373),
+			new google.maps.LatLng(29.509623, -81.843373),
+			new google.maps.LatLng(29.498329, -82.016397),
+			new google.maps.LatLng(29.471971, -82.061128),
+			new google.maps.LatLng(29.717609, -82.051156),
+			new google.maps.LatLng(29.718736, -82.028770),
+			new google.maps.LatLng(29.744015, -81.998519),
+			new google.maps.LatLng(29.749693, -81.940205),
+			new google.maps.LatLng(29.790849, -81.917860),
+			new google.maps.LatLng(29.803146, -81.863361),
+			new google.maps.LatLng(29.837189, -81.813222)
+		]}
+		,
+		{"name": "Volusia", "coords": [
+			new google.maps.LatLng(29.427159, -81.102246),
+			new google.maps.LatLng(29.411010, -81.155461),
+			new google.maps.LatLng(29.266155, -81.149968),
+			new google.maps.LatLng(29.261393, -81.417416),
+			new google.maps.LatLng(29.400473, -81.421190),
+			new google.maps.LatLng(29.398617, -81.435480),
+			new google.maps.LatLng(29.391934, -81.450034),
+			new google.maps.LatLng(29.378920, -81.452357),
+			new google.maps.LatLng(29.348172, -81.574296),
+			new google.maps.LatLng(29.202231, -81.567986),
+			new google.maps.LatLng(28.956600, -81.372970),
+			new google.maps.LatLng(28.847474, -81.358305),
+			new google.maps.LatLng(28.785638, -81.175909),
+			new google.maps.LatLng(28.820977, -81.108083),
+			new google.maps.LatLng(28.612345, -80.989544),
+			new google.maps.LatLng(28.613624, -80.965267),
+			new google.maps.LatLng(28.790787, -80.967695),
+			new google.maps.LatLng(28.791730, -80.732634)
+		]}
+		,
+		{"name": "Brevard", "coords": [
+			new google.maps.LatLng(28.791730, -80.732634),
+			new google.maps.LatLng(28.790787, -80.967695),
+			new google.maps.LatLng(28.613624, -80.965267),
+			new google.maps.LatLng(28.562349, -80.932378),
+			new google.maps.LatLng(28.536120, -80.942574),
+			new google.maps.LatLng(28.499217, -80.884310),
+			new google.maps.LatLng(28.473612, -80.876056),
+			new google.maps.LatLng(28.463795, -80.899119),
+			new google.maps.LatLng(28.385227, -80.889409),
+			new google.maps.LatLng(28.342930, -80.863190),
+			new google.maps.LatLng(28.085003, -80.863147),
+			new google.maps.LatLng(28.084575, -80.869944),
+			new google.maps.LatLng(27.822093, -80.868502),
+			new google.maps.LatLng(27.822093, -80.511670),
+			new google.maps.LatLng(27.863448, -80.447579),
+			new google.maps.LatLng(28.532261, -80.527461)
+		]}
+		,
+		{"name": "Orange", "coords": [
+			new google.maps.LatLng(28.612345, -80.989544),
+			new google.maps.LatLng(28.613624, -80.965267),
+			new google.maps.LatLng(28.562349, -80.932378),
+			new google.maps.LatLng(28.536120, -80.942574),
+			new google.maps.LatLng(28.499217, -80.884310),
+			new google.maps.LatLng(28.473612, -80.876056),
+			new google.maps.LatLng(28.463795, -80.899119),
+			new google.maps.LatLng(28.385227, -80.889409),
+			new google.maps.LatLng(28.358722, -80.873020),
+			new google.maps.LatLng(28.347799, -80.872142),
+			new google.maps.LatLng(28.347066, -81.657348),
+			new google.maps.LatLng(28.782932, -81.657553),
+			new google.maps.LatLng(28.785062, -81.414593),
+			new google.maps.LatLng(28.741533, -81.420655),
+			new google.maps.LatLng(28.712419, -81.444040),
+			new google.maps.LatLng(28.713685, -81.458475),
+			new google.maps.LatLng(28.640992, -81.459630),
+			new google.maps.LatLng(28.639725, -81.328272),
+			new google.maps.LatLng(28.610836, -81.327694)
 		]}
 	]
 }
