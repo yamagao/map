@@ -26,7 +26,7 @@ function initialize() {
 		fillColor: '#FFC2AA',
 		fillOpacity: 0.1
 	});
-	Florida.setMap(map);
+	//Florida.setMap(map);
 	
 	//Construct County Polygons and Animation
 	for (var i = 0; i < countyCoords.counties.length; i++) {
@@ -56,6 +56,7 @@ function initialize() {
 		 });
 		 tags[countyCoords.counties[i].name] = tag;
 		
+/*		
 		//hover on the polygon to show county name
 		google.maps.event.addListener(polygon, 'mousemove', function(event){
 			//get polygon center and show tag there
@@ -93,25 +94,37 @@ function initialize() {
 			markers[dataCounty.name].setMap(map);
 			infoWindows[dataCounty.name].open(map, markers[dataCounty.name]);
 		});
+*/
 		
-		//click polygon to show marker and infoWindow
-		google.maps.event.addListener(polygon, 'click', function(){
-			//hide all markers
-			for (var name in markers) {
-				markers[name].setMap(null);
-			}
-			
-			//find county data
-			for(var i = 0; i < data.counties.length; i++){
-				if(data.counties[i].name == this.county){
-					var dataCounty = data.counties[i];
-					break;
-				}
-			}
-			
-			//set marker and infoWindow
-			markers[dataCounty.name].setMap(map);
-			infoWindows[dataCounty.name].open(map, markers[dataCounty.name]);
+		//hover on the polygon to show marker and infoWindow
+		google.maps.event.addListener(polygon, 'mouseover', function(){
+			//only if the marker is not shown already (get rid of flashing)
+			if(markers[this.county].getMap() == null){
+				//hide all markers
+				for (var name in markers) {
+					markers[name].setMap(null);
+				} 
+				
+				//find county data
+				for(var i = 0; i < data.counties.length; i++){
+					if(data.counties[i].name == this.county){
+						var dataCounty = data.counties[i];
+						break;
+					}
+				} 
+				
+				//set marker and infoWindow
+				markers[dataCounty.name].setMap(map);
+				infoWindows[dataCounty.name].open(map, markers[dataCounty.name]);
+			} 
+		});
+
+		//hide marker and infoWindow when unhover
+		google.maps.event.addListener(polygon, "mouseout", function(event) {
+			if(!google.maps.geometry.poly.containsLocation(event.latLng, this)){
+				markers[this.county].setMap(null);
+				infoWindows[this.county].close();
+			} 
 		});
 	}
 	
