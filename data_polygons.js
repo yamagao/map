@@ -367,7 +367,7 @@ var countyCoords = {
 			new google.maps.LatLng(29.759317, -81.525606),
 			new google.maps.LatLng(29.622720, -81.524232),
 			new google.maps.LatLng(29.626301, -81.325105),
-			new google.maps.LatLng(29.670965, -81.213018)			
+			new google.maps.LatLng(29.670965, -81.213018)
 		]}
 		,
 		{"name": "Flagler", "coords": [
@@ -442,6 +442,8 @@ var countyCoords = {
 			new google.maps.LatLng(28.473612, -80.876056),
 			new google.maps.LatLng(28.463795, -80.899119),
 			new google.maps.LatLng(28.385227, -80.889409),
+			new google.maps.LatLng(28.358722, -80.873020),
+			new google.maps.LatLng(28.347799, -80.872142),
 			new google.maps.LatLng(28.342930, -80.863190),
 			new google.maps.LatLng(28.085003, -80.863147),
 			new google.maps.LatLng(28.084575, -80.869944),
@@ -471,6 +473,75 @@ var countyCoords = {
 			new google.maps.LatLng(28.640992, -81.459630),
 			new google.maps.LatLng(28.639725, -81.328272),
 			new google.maps.LatLng(28.610836, -81.327694)
+		]}
+		,
+		{"name": "Osceola", "coords": [
+			new google.maps.LatLng(28.347066, -81.657348),
+			new google.maps.LatLng(28.347799, -80.872142),
+			new google.maps.LatLng(28.342930, -80.863190),
+			new google.maps.LatLng(28.085003, -80.863147),
+			new google.maps.LatLng(28.084575, -80.869944),
+			new google.maps.LatLng(27.822093, -80.868502),
+			new google.maps.LatLng(27.822567, -80.881758),
+			new google.maps.LatLng(27.734700, -80.880026),
+			new google.maps.LatLng(27.733915, -80.873687),
+			new google.maps.LatLng(27.642810, -80.873278),
+			new google.maps.LatLng(27.643668, -81.139746),
+			new google.maps.LatLng(28.002679, -81.385711),
+			new google.maps.LatLng(28.083242, -81.361435),
+			new google.maps.LatLng(28.086669, -81.456599),
+			new google.maps.LatLng(28.143197, -81.457570),
+			new google.maps.LatLng(28.143640, -81.525029),
+			new google.maps.LatLng(28.200566, -81.524058),
+			new google.maps.LatLng(28.259172, -81.558045),
+			new google.maps.LatLng(28.259600, -81.657579),
+			new google.maps.LatLng(28.347234, -81.657579)
+		]}
+		,
+		{"name": "Pasco", "coords": [
+			new google.maps.LatLng(28.171675, -82.848132),
+			new google.maps.LatLng(28.172280, -82.105868),
+			new google.maps.LatLng(28.258803, -82.105868),
+			new google.maps.LatLng(28.259408, -82.055743),
+			new google.maps.LatLng(28.478726, -82.055056),
+			new google.maps.LatLng(28.479330, -82.252810),
+			new google.maps.LatLng(28.435261, -82.254184),
+			new google.maps.LatLng(28.432846, -82.687457),
+			new google.maps.LatLng(28.214038, -82.852252)
+		]}
+		,
+		{"name": "Pinellas", "coords": [
+			new google.maps.LatLng(28.171675, -82.848132),
+			new google.maps.LatLng(28.173013, -82.651107),
+			new google.maps.LatLng(27.966409, -82.649047),
+			new google.maps.LatLng(27.920308, -82.609222),
+			new google.maps.LatLng(27.880257, -82.582443),
+			new google.maps.LatLng(27.818331, -82.587249),
+			new google.maps.LatLng(27.704100, -82.636001),
+			new google.maps.LatLng(27.644507, -82.672393),
+			new google.maps.LatLng(27.627474, -82.701919),
+			new google.maps.LatLng(27.611047, -82.737625),
+			new google.maps.LatLng(27.858405, -82.853668)
+		]}
+		,
+		{"name": "Sarasota", "coords": [
+			new google.maps.LatLng(27.389976, -82.646488),
+			new google.maps.LatLng(27.386209, -82.252332),
+			new google.maps.LatLng(27.209079, -82.253787),
+			new google.maps.LatLng(27.207785, -82.056641),
+			new google.maps.LatLng(27.031990, -82.057369),
+			new google.maps.LatLng(27.033155, -82.255295),
+			new google.maps.LatLng(26.945317, -82.255659),
+			new google.maps.LatLng(26.946290, -82.376783)
+		]}
+		,
+		{"name": "St. Lucie", "coords": [
+			new google.maps.LatLng(27.558824, -80.679817),
+			new google.maps.LatLng(27.557169, -80.321190),
+			new google.maps.LatLng(27.262679, -80.199673),
+			new google.maps.LatLng(27.263594, -80.284474),
+			new google.maps.LatLng(27.206205, -80.285504),
+			new google.maps.LatLng(27.206368, -80.677915)
 		]}
 	]
 }
