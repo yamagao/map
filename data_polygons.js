@@ -543,5 +543,63 @@ var countyCoords = {
 			new google.maps.LatLng(27.206205, -80.285504),
 			new google.maps.LatLng(27.206368, -80.677915)
 		]}
+		,
+		{"name": "Martin", "coords": [
+			new google.maps.LatLng(27.262679, -80.199673),
+			new google.maps.LatLng(27.263594, -80.284474),
+			new google.maps.LatLng(27.206205, -80.285504),
+			new google.maps.LatLng(27.206368, -80.677915),
+			new google.maps.LatLng(27.121131, -80.677429),
+			new google.maps.LatLng(27.112419, -80.687829),
+			new google.maps.LatLng(26.957671, -80.612586),
+			new google.maps.LatLng(26.956581, -80.142164),
+			new google.maps.LatLng(26.970757, -80.141552),
+			new google.maps.LatLng(26.971302, -80.079156)
+		]}
+		,
+		{"name": "Collier", "coords": [
+			new google.maps.LatLng(26.330375, -81.845838),
+			new google.maps.LatLng(26.330375, -81.819634),
+			new google.maps.LatLng(26.317250, -81.818863),
+			new google.maps.LatLng(26.317941, -81.658550),
+			new google.maps.LatLng(26.421521, -81.659321),
+			new google.maps.LatLng(26.422211, -81.562209),
+			new google.maps.LatLng(26.519492, -81.564521),
+			new google.maps.LatLng(26.517423, -81.272413),
+			new google.maps.LatLng(26.252983, -81.267788),
+			new google.maps.LatLng(26.259110, -80.879903),
+			new google.maps.LatLng(25.805456, -80.873808),
+			new google.maps.LatLng(25.803375, -81.468814),
+			new google.maps.LatLng(25.845001, -81.682307),
+			new google.maps.LatLng(26.091679, -81.804854)
+		]}
+		,
+		{"name": "Broward", "coords": [
+			new google.maps.LatLng(26.333799, -80.881177),
+			new google.maps.LatLng(26.335042, -80.226690),
+			new google.maps.LatLng(26.328079, -80.203870),
+			new google.maps.LatLng(26.327915, -80.099547),
+			new google.maps.LatLng(26.321187, -80.074430),
+			new google.maps.LatLng(25.975901, -80.118701),
+			new google.maps.LatLng(25.970385, -80.294780),
+			new google.maps.LatLng(25.956977, -80.295508),
+			new google.maps.LatLng(25.956997, -80.680185),
+			new google.maps.LatLng(25.978580, -80.680549),
+			new google.maps.LatLng(25.980384, -80.876013)
+		]}
+		,
+		{"name": "Miami-Dade", "coords": [
+			new google.maps.LatLng(25.980384, -80.876013),
+			new google.maps.LatLng(25.978580, -80.680549),
+			new google.maps.LatLng(25.956997, -80.680185),
+			new google.maps.LatLng(25.956977, -80.295508),
+			new google.maps.LatLng(25.970385, -80.294780),
+			new google.maps.LatLng(25.975901, -80.118701),
+			new google.maps.LatLng(25.828871, -80.116471),
+			new google.maps.LatLng(25.484436, -80.176040),
+			new google.maps.LatLng(25.346909, -80.245999),
+			new google.maps.LatLng(25.131012, -80.652377),
+			new google.maps.LatLng(25.177574, -80.862254)
+		]}
 	]
 }
