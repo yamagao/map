@@ -1,0 +1,44 @@
+html, body {
+	width:100%;
+	height: 100%;
+	overflow-x:hidden;
+}
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:0.01%;
+}
+#map-canvas {
+	width:75%;
+	height: 93%;
+	float:left;	
+}
+#code {
+    line-height:30px;
+    background-color:#eeeeee;
+    width:24%;
+	height:93%;
+    float:left;	
+	padding-left: .5%;
+	padding-right: .5%;
+	overflow-y: scroll;
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+	padding:0;	 	 
+}
+.labels {
+	 color: red;
+	 background-color: white;
+	 font-family: "Lucida Grande", "Arial", sans-serif;
+	 font-size: 15px;
+	 font-weight: bold;
+	 text-align: center;
+	 width: 90px;     
+	 border: 2px solid red;
+	 white-space: nowrap;
+}
